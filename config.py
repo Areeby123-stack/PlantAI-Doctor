@@ -18,10 +18,24 @@ TRAIN_DIR = os.path.join(DATASET_DIR, 'train')
 VAL_DIR = os.path.join(DATASET_DIR, 'validation')
 TEST_DIR = os.path.join(DATASET_DIR, 'test')
 
-MODEL_DIR = os.path.join(BASE_DIR, 'model')
-MODEL_PATH = os.path.join(MODEL_DIR, 'plant_disease_model.keras')
-CLASS_INDICES_PATH = os.path.join(MODEL_DIR, 'class_indices.json')
-HISTORY_PATH = os.path.join(MODEL_DIR, 'training_history.json')
+```python
+MODEL_DIR = BASE_DIR
+
+MODEL_PATH = os.path.join(
+    BASE_DIR,
+    'plant_disease_model.keras'
+)
+
+CLASS_INDICES_PATH = os.path.join(
+    BASE_DIR,
+    'class_indices.json'
+)
+
+HISTORY_PATH = os.path.join(
+    BASE_DIR,
+    'training_history.json'
+)
+```
 
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
 UPLOAD_FOLDER = os.path.join(STATIC_DIR, 'uploads')
